@@ -95,7 +95,7 @@ public class FormularioController {
 			sb.append(";");
 			sb.append(ui.getComment());
 			sb.append("\r\n");
-			File file = new File("datafile-laboratorio2.txt");
+			File file = new File("/tmp/datafile-laboratorio2.txt");
 			FileWriter fr = new FileWriter(file, true);
 			fr.write(sb.toString());
 			fr.close();
